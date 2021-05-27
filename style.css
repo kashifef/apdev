@@ -503,17 +503,21 @@ New Styles
 
 .lp-single-offer {
     display: block;
-    margin-left: 20px;
-} 
-
-.pure-u-1 .lp-single-offer {
-    margin-left: 0; text-decoration: none;     padding: 15px; transition: all .3s ease-in-out;
-}
-.pure-u-1 .lp-single-offer:hover{
     text-decoration: none;
-    box-shadow: -0.518px 1.932px 12px 0px rgb(0 0 0 / 15%); border-radius: 12px;
+    padding: 5px 10px 5px 15px;
+    border-radius: 10px;
 
+    -webkit-transition: all .3s ease-in-out;
+  -moz-transition:    all .3s ease-in-out;
+  -o-transition:      all .3s ease-in-out;
+  -ms-transition:     all .3s ease-in-out;
+  transition:         all .3s ease-in-out; 
 }
+
+.lp-single-offer:hover {
+    box-shadow: -0.518px 1.932px 12px 0px rgb(0 0 0 / 25%);
+}
+
 .lp-single-offer img {
     display: inline-block;
 }
@@ -549,7 +553,8 @@ New Styles
     padding: 30px;
     border-radius: 12px;
     text-decoration: none;
-
+    height: calc(100% - 70px);
+    
     -webkit-transition: all .3s ease-in-out;
     -moz-transition:    all .3s ease-in-out;
     -o-transition:      all .3s ease-in-out;
@@ -617,9 +622,19 @@ New Styles
     display: block;
     overflow: hidden;
     margin:0 5px 30px;
-    text-decoration: none;
+    text-decoration: none;    
     padding: 15px;
-    border-radius: 8px; transition: all .3s ease-in-out;
+    border-radius: 10px;
+
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition:    all .3s ease-in-out;
+    -o-transition:      all .3s ease-in-out;
+    -ms-transition:     all .3s ease-in-out;
+    transition:         all .3s ease-in-out;
+}
+
+.lp-single-finish:hover {
+  box-shadow: -0.518px 1.932px 12px 0px rgb(0 0 0 / 25%);
 }
 
 .lp-single-finish-imgdiv {
@@ -631,20 +646,17 @@ New Styles
 
 .lp-single-finish-imgdiv img {
     display: block;
-    width: 100%; 
+    width: 100%;
 }
 
 .lp-single-finish-name {
     display: block;
-    margin: 10px 0 0 10px;
+    margin: 5px 0 0 10px;
     color: #3e3e3e;
     font-size: 20px;
     font-family: gotham-book;
 }
-.lp-single-finish:hover  {
-        box-shadow: -0.518px 1.932px 12px 0px rgb(0 0 0 / 15%);
- 
-}
+
 
 
 /* Info Sections */ 
@@ -668,9 +680,14 @@ New Styles
 
 .lp-info-section p span {
    color: #3e3e3e;
-   font-family: gotham-book;
+   font-family: gotham-bold;
 }
-.lp-info-section p span a { font-weight: 400; }
+
+.lp-info-section p span a {
+    font-weight: 400;
+    font-family: gotham-book;
+}
+
 .lp-info-section p b {
   font-family: gotham-bold;
 }
@@ -685,7 +702,62 @@ New Styles
   text-decoration: underline;
 }
 
-.min-height465 {  height: 465px; }
+
+
+
+/* Banner Section */ 
+
+.lp-banner-section h3 {
+    margin-top: 0;
+    color: #0c2340;
+    font-size: 32px;
+    font-family: gotham-bold;
+ }
+
+.lp-banner-section p { 
+    font-size: 20px;
+    color: #3e3e3e;
+    font-family: gotham-book;
+}
+
+.lp-button {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-family: gotham-book;
+
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition:    all .3s ease-in-out;
+    -o-transition:      all .3s ease-in-out;
+    -ms-transition:     all .3s ease-in-out;
+    transition:         all .3s ease-in-out;
+}
+
+.lp-button.red {
+    background: #ca0629;
+}
+
+.lp-button:hover {
+  opacity: 0.7;
+}
+
+.lp-promo-banner-imgdiv {
+    display: block;
+    width: calc(100% - 30px);
+    overflow: hidden;
+}
+
+.lp-promo-banner-imgdiv img{
+    display: block;
+    width: 100%;
+}
+
+.lp-banner-section .lp-promo-banner-imgdiv {
+    padding-left: 30px;
+}
+
+
 
 
 /**********************************
@@ -712,9 +784,31 @@ New Styles
     font-size: 16px;
   }
 
-.full-height{
-    height: auto;
-}
+
+
+
+  /* Promo Banner Section  */
+
+  .lp-banner-section .lp-promo-banner-imgdiv {
+    padding-left: 0;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+
+  /* Reftype Section  */
+
+  .lp-single-product {
+    padding: 0 10px;
+  }
+
+  .lp-single-product-name {
+    font-size: 15px;
+    margin: 10px 5px 20px; 
+  }
+
+
+
 }
 
 
@@ -795,7 +889,20 @@ New Styles
 
 
 }
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Help Center Styles */
 
 
 /*Help center*/
