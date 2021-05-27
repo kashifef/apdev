@@ -760,6 +760,134 @@ New Styles
 
 
 
+
+/* Support Page Section */ 
+
+.pure-g.support-page {
+  background-color: rgb(216 216 216 / 10%);
+}
+
+.lp-banner-image.support-page {
+  position: relative;
+  background-image: url(img/helpbanner.png);
+  height: 380px;
+  margin-top: 40px; 
+  background-size: contain;
+  border-bottom: #CA0629 solid 20px;
+
+  -webkit-filter: none;
+  filter: none;
+}
+
+.lp-banner-image.support-page:before {
+  background: none;
+}
+
+.lp-banner-image.support-page .center-div {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #292929;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.lp-banner-image.support-page .center-div h1 {
+    font-size: 42px;
+    font-family: gotham-bold;
+    margin: 0;
+}
+
+.lp-banner-image.support-page .center-div p {
+    font-size: 22px;
+    font-weight: 400; 
+    font-family: gotham-book;
+    margin: 0;
+}
+
+.support-page h3 {
+  color: #CA0629;
+  font-size: 18px;
+  font-family: gotham-book;
+  margin: 0px; 
+  font-weight: 400;
+}
+
+.support-page h2 {
+  color: #0c2340;
+  font-size: 32px;
+  font-family: gotham-bold; 
+  margin: 0;
+}
+
+
+.support-page .support-item {
+  display: block;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  padding: 20px;
+  margin: 15px;
+  box-shadow: 0 5px 20px 0px rgb(0 0 0 / 10%);
+}
+
+
+.support-page .support-item-imgdiv {
+  position: relative;
+  display: block;
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  margin: 0 auto 15px;
+  border-radius: 50%; 
+  box-shadow: 0 5px 20px 0px rgb(0 0 0 / 10%);
+}
+
+.support-page .support-item-imgdiv img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.support-page h4 {
+  font-size: 24px;
+  color: #222A41;
+  font-family: gotham-book;
+  margin: 10px;
+}
+
+.support-page .icon-arrow {
+  display: block;
+  width: 30px;
+  height: 30px;
+  margin: 0 auto;
+  background-image: url(img/icon-arrow_right-primary.png);
+}
+
+
+
+
 /**********************************
       Mobile Responsiveness
 **********************************/
@@ -890,145 +1018,4 @@ New Styles
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Help Center Styles */
-
-
-/*Help center*/
-/* Banner Styles */
-
-.help-banner-image {
-   position: relative; 
-   overflow: hidden;
-
-   height: 380px;
-   background-image: url(img/helpbanner.png);
-   background-repeat: no-repeat;
-   background-position: center;
-   border-bottom: #CA0629 solid 20px;
-   
-
-   
-}
-
-.help-banner-image:before {
-   content: "";
-   display: block;
-   position: absolute;
-   top: 0;
-   right: 0;
-   left: 0;
-   bottom: 0;
-    
-}
-
-.help-banner-header {
-       width: 100%;
-    position: relative;
-   top: 120px; 
-   text-align: center;
-   color: #292929;
-}
-
-.help-banner-header h1 {
-   font-size: 42px;
-   font-family: gotham-bold;
-   margin-bottom: 0px; 
-}
-
-.help-banner-header p {
-   font-size: 22px; font-weight: 400;
-   margin-top: 0;
-   font-family: gotham-book; margin: 0;
-}
-
-
-.help-page {
-        padding: 40px 0;
-        background-color: rgba(216, 216, 216, 0.1); 
-}
-.help-page h3 {
-    
-   color: #CA0629;
-   font-size: 18px;
-  font-family: gotham-book;
-  margin-bottom: 0px; margin: 0;
-  font-weight: 400;
-}
-
-.help-page h2 {
-   
-   color: #0c2340;
-   font-size: 32px;
-   font-family: gotham-bold;
-   margin-bottom: 0px; margin: 0;
-}
-
  
-
-.help-page h2 a.minilink {
-    font-family: gotham-book;
-    font-size: 14px;
-    margin-left: 8px;
-    text-decoration: none;
-    color: #3e7697;
-}
-
-.help-item {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 20px; box-shadow: 0 5px 20px 0px rgb(0 0 0 / 10%); display: block;
-    overflow: hidden; text-align: center; text-decoration: none; margin: 15px;
-}
-.help-item h4{
-    font-family: gotham-book;
-    font-size: 24px; color: #222A41; margin: 10px;
-}
-.icon-arrow{
-     background-image: url(img/icon-arrow_right-primary.png);
-     width: 30px;
-     display: block;
-     height: 30px;
-     margin: 0 auto;
-}
-.help-item-image{
-    width: 80px;
-     display: block;
-     height: 80px;
-     margin: 0 auto;
-      border-radius: 50%;
-      background-color: #fff; box-shadow: 0 5px 20px 0px rgb(0 0 0 / 10%);  margin-bottom: 15px;
- }
-.help-item-image img {
-   margin-top: 25px;
-}
-
-.margin-left-0 { margin-left: 0; }
-.margin-right-0 { margin-right: 0; }
-.mb-35 {
-    margin-bottom: 35px!important;
-}
-
-
-.mb-75 {
-    margin-bottom: 75px!important;
-}
-
-.ad-div {  }
-.ad-div p { display: block;
-    font-size: 20px;
-    color: #3e3e3e;
-    font-family: gotham-book; margin: 0; margin-bottom: 25px; padding-right: 15px; }
-.ad-div .btn { background: #ff6724; color: #fff; text-decoration: none; padding: 15px 25px;  font-family: gotham-book; }
-.ad-div .btn:hover{ background: #f66120; }
