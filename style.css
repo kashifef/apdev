@@ -56,7 +56,7 @@ New Styles
 .padding-tb-sm {
    padding-top: 12px;
    padding-bottom: 12px;
-}
+} 
 
 .landing-page h2 {
    display: inline-block;
@@ -707,15 +707,19 @@ New Styles
 
 /* Banner Section */ 
 
+.lp-banner-section {
+  text-align: center;
+}
+
 .lp-banner-section h3 {
     margin-top: 0;
-    color: #0c2340;
-    font-size: 32px;
+    color: #3e3e3e;
+    font-size: 22px;
     font-family: gotham-bold;
  }
 
 .lp-banner-section p { 
-    font-size: 20px;
+    font-size: 22px;
     color: #3e3e3e;
     font-family: gotham-book;
 }
@@ -723,9 +727,12 @@ New Styles
 .lp-button {
     display: inline-block;
     color: #fff;
+    font-size: 18px;
     text-decoration: none;
     padding: 15px 25px;
     font-family: gotham-book;
+    width: 200px;
+    border-radius: 50px;
 
     -webkit-transition: all .3s ease-in-out;
     -moz-transition:    all .3s ease-in-out;
@@ -754,8 +761,31 @@ New Styles
 }
 
 .lp-banner-section .lp-promo-banner-imgdiv {
-    padding-left: 30px;
+    padding-right: 30px;
 }
+
+.landing-page .vertical_align_div {
+  display: block;
+  position: relative;
+  min-height: 200px;
+  height: 100%;
+}
+
+
+.landing-page .vertical_align_content {
+  display: block;
+  width: 100%;
+
+  position: absolute;
+   top: 50%;
+   left: 50%;
+
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+ }
 
 
 
@@ -769,10 +799,10 @@ New Styles
 
 .lp-banner-image.support-page {
   position: relative;
-  background-image: url(img/helpbanner.png);
-  height: 380px;
-  margin-top: 40px; 
-  background-size: contain;
+  background-image: url(img/support/banner.png);
+  height: 420px; 
+  background-size: cover;
+  background-position: top;
   border-bottom: #CA0629 solid 20px;
 
   -webkit-filter: none;
@@ -801,13 +831,15 @@ New Styles
 }
 
 .lp-banner-image.support-page .center-div h1 {
-    font-size: 42px;
+    color: #ca0629;
+    font-size: 72px;
     font-family: gotham-bold;
     margin: 0;
 }
 
 .lp-banner-image.support-page .center-div p {
-    font-size: 22px;
+    color: #292929;
+    font-size: 28px;
     font-weight: 400; 
     font-family: gotham-book;
     margin: 0;
@@ -819,15 +851,24 @@ New Styles
   font-family: gotham-book;
   margin: 0px; 
   font-weight: 400;
-}
+} 
 
 .support-page h2 {
-  color: #0c2340;
-  font-size: 32px;
-  font-family: gotham-bold; 
-  margin: 0;
+   display: inline-block;
+   color: #0c2340;
+   font-size: 32px;
+   font-family: gotham-bold;
+   margin-bottom: 50px;
 }
 
+.support-page h2:after {
+    content: "";
+    display: block;
+    width: inherit;
+    height: 3px;
+    background: #ca0629;
+    margin-top: 5px;
+}
 
 .support-page .support-item {
   display: block;
@@ -884,6 +925,72 @@ New Styles
   margin: 0 auto;
   background-image: url(img/icon-arrow_right-primary.png);
 }
+
+.support-type-single {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin:0 5px;
+  text-decoration: none;    
+  padding: 15px;
+  border-radius: 10px;
+
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition:    all .3s ease-in-out;
+  -o-transition:      all .3s ease-in-out;
+  -ms-transition:     all .3s ease-in-out;
+  transition:         all .3s ease-in-out;
+}
+
+.support-type-single:hover {
+  box-shadow: -0.518px 1.932px 12px 0px rgb(0 0 0 / 25%);
+}
+
+.support-type-imgdiv {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  height: 180px;
+}
+
+.support-type-imgdiv img {
+   display: block;
+   min-width: 100%;
+   min-height: 100%;
+   max-width: 200%;
+   max-height: 200%;
+
+   position: absolute;
+   top: 50%;
+   left: 50%;
+
+   -webkit-transform: translate(-50%, -50%);
+   -moz-transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   -o-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+}
+
+.support-type-text {
+    display: block;
+    font-size: 22px;
+    color: #151515;
+    font-family: gotham-medium;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.support-type-single p {
+    font-size: 14px;
+    color: #151515;
+    font-family: gotham-book ;
+}
+
+
+
+
+
 
 
 
