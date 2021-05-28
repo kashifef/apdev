@@ -190,6 +190,7 @@ p {
 
 .lp-single-product-imgdiv img {
    display: block;
+   max-width: 100%;
    height: 100%;
    margin: 0 auto;
 }
@@ -806,8 +807,7 @@ p {
   background-image: url(img/support/banner.png);
   height: 420px; 
   background-size: cover;
-  background-position: top;
-  border-bottom: #CA0629 solid 20px;
+  background-position: top; 
 
   -webkit-filter: none;
   filter: none;
@@ -1057,7 +1057,32 @@ p {
       Mobile Responsiveness
 **********************************/
 
+@media screen and (max-width: 35.5em) {
 
+
+  /* Support Items Section  */
+  
+  .support-page h4 {
+      font-size: 14px;
+      line-height: 21px;
+      margin: 0px;
+  }
+  
+  
+  
+  /* header Section title  */
+  
+  .lp-banner-image.support-page .center-div h1 {
+      color: #ca0629;
+      font-size: 40px;
+      font-family: gotham-bold;
+      margin-top: 20px;
+  }
+
+
+
+
+}
 
 @media screen and (max-width: 48em) {
 
@@ -1082,12 +1107,18 @@ p {
 
   /* Promo Banner Section  */
 
-  .lp-banner-section .lp-promo-banner-imgdiv {
+ .lp-promo-banner-imgdiv {
     padding-left: 0;
     margin-top: 30px;
     width: 100%;
   }
 
+
+  /* Video Banner Section  */
+
+  .support-video-content {
+    text-align: center;
+  }
 
   /* Reftype Section  */
 
@@ -1100,6 +1131,37 @@ p {
     margin: 10px 5px 20px; 
   }
 
+
+
+  /* Promo Banner Section  */
+  
+  .landing-page .vertical_align_div {
+    height: initial;
+    min-height: initial;
+    margin-top: 30px;
+  }
+  
+  .landing-page .vertical_align_content {
+    display: block;
+    width: 100%;
+  
+    position: relative;
+     top: 0;
+     left: 0;
+  
+     -webkit-transform: translate(0, 0);
+     -moz-transform: translate(0, 0);
+     -ms-transform: translate(0, 0);
+     -o-transform: translate(0, 0);
+     transform: translate(0, 0);
+ }
+
+
+ /* support items Section  */
+
+ .support-icon-section .pure-u-1-2:nth-child(2n) .support-icon-div:after {
+    display: none;
+  }
 
 
 }
@@ -1163,7 +1225,7 @@ p {
 
   /* General Section */
 
-  .landing-page .max-1200 {
+  .landing-page .max-1200 , .support-page .max-1200 {
     padding: 0 20px;
   }
 
