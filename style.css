@@ -769,6 +769,11 @@ p {
     padding-right: 30px;
 }
 
+.lp-promo-banner-imgdiv iframe {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
 .landing-page .vertical_align_div {
   display: block;
   position: relative;
@@ -1111,8 +1116,7 @@ p {
     padding-left: 0;
     margin-top: 30px;
     width: 100%;
-  }
-
+  } 
 
   /* Video Banner Section  */
 
