@@ -83,7 +83,11 @@ New Styles
     color: #3e7697;
 }
 
-
+p {
+  font-size: 22px;
+  color: #3e3e3e;
+  font-family: gotham-book;
+}
 
 
 /* Fonts */
@@ -987,11 +991,65 @@ New Styles
     font-family: gotham-book ;
 }
 
+.support-video-content h3 {
+    color: #3e3e3e;
+    font-size: 22px;
+    font-family: 'gotham-bold';
+    margin-top: 20px;
+}
 
 
+.support-icon-div {
+  position: relative;
+  display: block; 
+  height: 240px;
+  text-decoration: none;
+  text-align: center;
 
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition:    all .3s ease-in-out;
+  -o-transition:      all .3s ease-in-out;
+  -ms-transition:     all .3s ease-in-out;
+  transition:         all .3s ease-in-out;
+}
 
+.support-icon-div:after {
+    content: "";
+    display: block;
+    border-right: 1px solid #707070;
+    position: absolute;
+    top: 20px;
+    bottom: 20px;
+    right: 0;
+}
 
+.support-icon-section .pure-u-1-2:last-child .support-icon-div:after {
+  display: none;
+}
+
+.support-icon-div:hover {
+  box-shadow: -0.518px 1.932px 12px 0px rgb(0 0 0 / 25%);
+}
+
+.support-icon-imgdiv {
+    display: block;
+    overflow: hidden;
+    width: 80px;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.support-icon-imgdiv img {
+    display: block;
+    width: 100%;
+}
+
+.support-icon-div h4 {
+    color: #3e3e3e;
+    font-size: 26px;
+    font-family: 'gotham-bold';
+    line-height: 240px;
+}
 
 
 
