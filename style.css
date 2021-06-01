@@ -203,7 +203,7 @@ p {
    display: block;
    text-align: center;
    font-size: 18px;
-   margin: 10px 50px 20px;
+   margin: 10px 10px 20px;
    font-family: gotham-book;
 }
 
@@ -297,9 +297,21 @@ p {
    background-color: #494a49;
 }
 
+.lp-single-brand.samsung .lp-single-brand-name {
+   background-color: #231f20;
+}
+
+.lp-single-brand.electrolux .lp-single-brand-name {
+   background-color: #041f50;
+}
+
+.lp-single-brand.whirlpool .lp-single-brand-name {
+   background-color: #f0b310;
+}
+
 .lp-single-brand-name img {
     display: block;
-    max-width: 75%;
+    max-width: 60%;
 
     position: absolute;
     top: 50%;
@@ -1171,6 +1183,26 @@ p {
 
 
 }
+
+
+
+
+/**********************************
+      laundry Landing page
+**********************************/
+
+
+/* Laundry banner  */
+
+.laundry .lp-banner-image {
+  background-image: url(img/laundry_banner.png);
+}
+
+
+.laundry .lp-single-product {
+  padding: 0 10px;
+}
+
 
 
 
