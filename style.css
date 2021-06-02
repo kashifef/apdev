@@ -207,6 +207,36 @@ p {
    font-family: gotham-book;
 }
  
+.lp-single-product-imgdiv.sale {
+    background-color: transparent;
+    border: 9px solid #ca0629;
+    border-radius: 12px;
+    height: 240px;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.lp-single-product-imgdiv.sale span {
+    color: #ca0629;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 52px;
+    font-family: gotham-black;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
 
 /* Brand Sections */ 
 
@@ -316,7 +346,21 @@ p {
 }
 
 
+.lp-single-brand.samsung > img {
+    top: 40px;
+}
 
+.lp-single-brand.lg > img {
+    top: 80px;
+}
+
+.lp-single-brand.ge > img {
+    top: 90px;
+}
+
+.lp-single-brand.whirlpool > img {
+    top: 60px;
+}
 
 /* Picks Sections */ 
 
@@ -803,7 +847,7 @@ p {
 .lp-banner-image.support-page {
   position: relative;
   background-image: url(img/support/banner.png);
-  height: 420px; 
+  height: 340px; 
   background-size: cover;
   background-position: top; 
 
@@ -1025,10 +1069,6 @@ p {
   display: none;
 }
 
-.support-icon-div:hover {
-  box-shadow: -0.518px 1.932px 12px 0px rgb(0 0 0 / 25%);
-}
-
 .support-icon-imgdiv {
     display: block;
     overflow: hidden;
@@ -1038,8 +1078,7 @@ p {
 }
 
 .support-icon-imgdiv img {
-    display: block;
-    max-width: 50px;
+    display: block; 
     max-height: 50px;
     margin: 0 auto;
 }
@@ -1076,6 +1115,32 @@ p {
 /**********************************
       Mobile Responsiveness
 **********************************/
+
+
+
+
+@media screen and (max-width: 26.25em) {
+
+
+  /* Offer Section */
+
+  .lp-single-offer img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .lp-single-offer-title {
+    display: block;
+    margin-left: 0;
+    text-align: center;
+  }
+
+
+
+}
+
+
+
 
 @media screen and (max-width: 35.5em) {
 
